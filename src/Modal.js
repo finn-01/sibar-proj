@@ -5,6 +5,7 @@ import { FaTimes } from "react-icons/fa";
 
 const Modal = () => {
 	const { isModalOpen, closeModal } = useGlobalContext();
+	console.log(isModalOpen);
 
 	return (
 		<div
