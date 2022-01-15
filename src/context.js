@@ -16,6 +16,7 @@ const AppProvider = ({ children }) => {
 
 	const openModal = () => {
 		setIsModalOpen(true);
+		//console.log("he");
 	};
 
 	const closeModal = () => {
@@ -24,14 +25,14 @@ const AppProvider = ({ children }) => {
 
 	return (
 		<AppContext.Provider
-			value={
-				(isSidebarOpen,
+			value={{
+				isSidebarOpen,
 				isModelOpen,
 				openSidebar,
 				openModal,
 				closeSidebar,
-				closeModal)
-			}
+				closeModal,
+			}}
 		>
 			{children}
 		</AppContext.Provider>
