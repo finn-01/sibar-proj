@@ -6,12 +6,11 @@ import Home from "./Home";
 
 const App = () => {
 	return (
-		<div>
-			Hello App
+		<>
+			<Home />
 			<Modal />
 			<Sidebar />
-			<Home />
-		</div>
+		</>
 	);
 };
 
